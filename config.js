@@ -44,5 +44,10 @@ module.exports = {
     // Maximum RAM memory (GB) each member's mongod process may occupy
     maxMongodMemory: 15,
     // Max database disk storage size (in MB) each member may utilize
-    maxDatabaseSize: 12500
+    maxDatabaseSize: 12500,
+
+    // A particular alert/notifcation will be snoozed with the provided interval.
+    // Each alert is treated as an individual entity. Also, alerts on each member of replicaset is treated individually.
+    // value in minute   
+    snoozeInterval: 10, // 10 minutes
 };
